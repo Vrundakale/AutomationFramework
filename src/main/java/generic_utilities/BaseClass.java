@@ -2,8 +2,10 @@ package generic_utilities;
 
 import java.io.IOException;
 
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -32,7 +34,7 @@ public class BaseClass {
 	//public void bcConfig(vValue) throws IOException {
 	public void bcConfig()throws IOException {
 		String URL = fUtil.readDataFromPropertyFile("Url");
-		driver = new EdgeDriver();
+		driver = new FirefoxDriver();
 		
 		
 		//if (vValue.equals("edge")) 
