@@ -77,7 +77,7 @@ public void tc_002AddProductTest()
 				chp.clickOnContinueBtn();
 				
 				
-			
+			System.out.println("PASS1");
 				
 				//Click on finish button
 				CheckoutStepTwo_Page chp1 = new CheckoutStepTwo_Page(driver);
